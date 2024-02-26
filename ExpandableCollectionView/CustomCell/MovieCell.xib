@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="ExpandableCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="277"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="249" height="277"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOo-MD-cUw">
+                        <rect key="frame" x="83.666666666666671" y="-4" width="82.000000000000014" height="285"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDM-er-VM7">
+                                <rect key="frame" x="16" y="16" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EoN-H9-Xu5"/>
+                                    <constraint firstAttribute="width" constant="50" id="g6r-0X-KbY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qs1-EM-49Q">
+                                <rect key="frame" x="16" y="82" width="58" height="187"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qs1-EM-49Q" firstAttribute="leading" secondItem="yOo-MD-cUw" secondAttribute="leadingMargin" constant="8" id="02h-hp-CkX"/>
+                            <constraint firstAttribute="bottom" secondItem="qs1-EM-49Q" secondAttribute="bottom" constant="16" id="5eH-sp-9eO"/>
+                            <constraint firstItem="KDM-er-VM7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yOo-MD-cUw" secondAttribute="leading" constant="16" id="B1H-mj-l0t"/>
+                            <constraint firstItem="KDM-er-VM7" firstAttribute="top" secondItem="yOo-MD-cUw" secondAttribute="top" constant="16" id="KsK-FT-Uib"/>
+                            <constraint firstItem="KDM-er-VM7" firstAttribute="centerX" secondItem="yOo-MD-cUw" secondAttribute="centerX" id="XvP-hs-7pf"/>
+                            <constraint firstItem="qs1-EM-49Q" firstAttribute="top" secondItem="KDM-er-VM7" secondAttribute="bottom" constant="16" id="e3Z-eE-wrc"/>
+                            <constraint firstAttribute="trailing" secondItem="qs1-EM-49Q" secondAttribute="trailing" constant="8" id="ukp-Oz-VJ5"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KDM-er-VM7" secondAttribute="trailing" constant="16" id="vDb-2M-3el"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="yOo-MD-cUw" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="09S-hw-ZwA"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yOo-MD-cUw" secondAttribute="trailing" id="7dv-QY-r80"/>
+                <constraint firstItem="yOo-MD-cUw" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Dia-39-51U"/>
+                <constraint firstItem="yOo-MD-cUw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-4" id="kWG-2a-dMr"/>
+                <constraint firstItem="yOo-MD-cUw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" id="piZ-9d-lu2"/>
+            </constraints>
+            <size key="customSize" width="249" height="277"/>
+            <connections>
+                <outlet property="imgView" destination="KDM-er-VM7" id="ji7-6j-Vvn"/>
+                <outlet property="lblTitle" destination="qs1-EM-49Q" id="dLz-a3-hqh"/>
+            </connections>
+            <point key="canvasLocation" x="290.83969465648852" y="78.521126760563391"/>
+        </collectionViewCell>
+    </objects>
+</document>
